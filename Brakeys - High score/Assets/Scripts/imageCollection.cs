@@ -6,13 +6,14 @@ using UnityEngine.UI;
 public class imageCollection : MonoBehaviour
 {
     public Sprite[] daduImage; //simpan all sprite
-    public Image displayImage; //reference to script
+    private Image displayImage;
+    public GameObject rollButton;
 
     
     // Start is called before the first frame update
     void Start()
     {
-        
+        displayImage = GetComponent<Image>();
     }
 
     // Update is called once per frame
@@ -23,8 +24,7 @@ public class imageCollection : MonoBehaviour
 
     public void setImage()
     {
-        int count = FindObjectOfType<Button>().GetComponent<RollTheDice>().StartRoll(); //collect return value utk kegunaan ni
-        
-        displayImage.sprite = daduImage[count-1];
+        int count = rollButton.GetComponent<Button>().GetComponent<RollTheDice>().StartRoll();
+        displayImage.sprite = daduImage[count - 1];
     }
 }

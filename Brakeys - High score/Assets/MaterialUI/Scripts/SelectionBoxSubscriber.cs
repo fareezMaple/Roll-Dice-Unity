@@ -16,6 +16,7 @@ namespace MaterialUI
 	public class SelectionBoxSubscriber : MonoBehaviour
 	{
 		SelectionBoxConfig config;
+		private int currentIdSelected = 0;
 
 		void OnEnable ()
 		{
@@ -29,9 +30,28 @@ namespace MaterialUI
 			config.ItemPicked -= DoThing;
 		}
 
-		void DoThing (int id)
+		void DoThing (int id) //modified
 		{
-			Debug.Log ("'" + config.listItems[id] + "' picked, ID: " + id);
+			//Debug.Log ("'" + config.listItems[id] + "' picked, ID: " + id);
+			if (currentIdSelected != id)
+			{
+				changeTheMode(id);
+				currentIdSelected = id;
+			}
 		}
+
+		void changeTheMode(int idSelected) //saya yang tambah
+		{
+			Debug.Log("Option changed");
+
+		}
+
+		/* original
+		 void DoThing(int id)
+		{
+			Debug.Log("'" + config.listItems[id] + "' picked, ID: " + id);
+		}
+
+		*/
 	}
 }
