@@ -25,6 +25,8 @@ public class RollTheDice : MonoBehaviour
         int randomNum = Random.Range(1, 7);
         diceText.text = randomNum.ToString();
 
+        Debug.Log("Called Roll The Dice");
+
         return randomNum; //return value utk kegunaan image array (imageCollection)
     }
 

@@ -18,6 +18,9 @@ namespace MaterialUI
 		SelectionBoxConfig config;
 		private int currentIdSelected = 0;
 
+		public GameObject panel1;
+		public GameObject panel2;
+
 		void OnEnable ()
 		{
 			//	Example of what you can do when an item is selected
@@ -35,14 +38,23 @@ namespace MaterialUI
 			//Debug.Log ("'" + config.listItems[id] + "' picked, ID: " + id);
 			if (currentIdSelected != id)
 			{
-				changeTheMode(id);
+				changeTheMode();
 				currentIdSelected = id;
 			}
 		}
 
-		void changeTheMode(int idSelected) //saya yang tambah
+		void changeTheMode() //saya yang tambah
 		{
-			Debug.Log("Option changed");
+			//set the panel and vice versa
+			if (panel1.activeSelf)
+				panel1.SetActive(false);
+			else
+				panel1.SetActive(true);
+
+			if (panel2.activeSelf)
+				panel2.SetActive(false);
+			else
+				panel2.SetActive(true);
 
 		}
 

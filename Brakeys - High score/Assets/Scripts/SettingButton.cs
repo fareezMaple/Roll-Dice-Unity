@@ -25,8 +25,11 @@ public class SettingButton : MonoBehaviour
         SettingPanel.SetActive(false);
         SettingBackground.GetComponent<ScreenConfig>().Hide(); //ripple control
 
-        rippleMask.localScale = new Vector3(.1f, .1f, .1f); //ni punca
+        rippleMask.localScale = new Vector3(.1f, .1f, .1f); //ni punca   
+    }
 
-        
+    public void viewOnGooglePlay()
+    {
+        Application.OpenURL("https://play.google.com/store/apps/details?id=com.maple.DiceDadu");
     }
 }

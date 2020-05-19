@@ -1,32 +1,38 @@
 ﻿using UnityEngine;
 using TMPro;
-//Brakeysss code
+//Modified Brakeys code
 public class Dice : MonoBehaviour
 {
     public TextMeshProUGUI scoreText;
-    public TextMeshProUGUI highScore;
+    
+    public TextMeshProUGUI scoreText1;
+    public TextMeshProUGUI scoreText2;
+
+    private int number1;
+    private int number2;
 
     private void Start()
     {
-        highScore.text = PlayerPrefs.GetInt("HighScore", 0).ToString();
+        
     }
 
     public void BrakeysRollDice()
     {
         int number = Random.Range(1, 7);
         scoreText.text = number.ToString();
-        if (number > PlayerPrefs.GetInt("HighScore", 0))
-        {
-            PlayerPrefs.SetInt("HighScore", number);
-            highScore.text = number.ToString();
-        }
-        
+
+        Debug.Log("Called Brakeys code");
     }
 
-    public void Reset()
+    public void RollDiceTwice()
     {
-        PlayerPrefs.DeleteAll();
-        highScore.text = "0";
+        number1 = Random.Range(1, 7);
+        number2 = Random.Range(1, 7);
+
+        scoreText1.text = number1.ToString();
+        scoreText2.text = number2.ToString();
     }
 
+    public int getNum1 => number1;
+    public int getNum2 => number2;
 }
