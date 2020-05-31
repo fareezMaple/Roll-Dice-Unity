@@ -11,9 +11,15 @@ public class ChangeTheme : MonoBehaviour
     public void changeTheme(string ThemeMode)
     {
         if (ThemeMode == LightMode)
+        {
             SceneManager.LoadScene(1); //load light scene
+            PlayerPrefs.SetInt("ThemeMode", 1);
+        }
 
         if (ThemeMode == DarkMode)
+        {
             SceneManager.LoadScene(2); //load dark scene
+            PlayerPrefs.SetInt("ThemeMode", 2);
+        }
     }
 }

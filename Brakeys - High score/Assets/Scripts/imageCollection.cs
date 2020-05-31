@@ -16,12 +16,6 @@ public class imageCollection : MonoBehaviour
         displayImage = GetComponent<Image>();
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
     public void setImage()
     {
         int count = rollButton.GetComponent<Button>().GetComponent<RollTheDice>().StartRoll();
