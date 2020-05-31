@@ -8,4 +8,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/LightScene.unity
     guid: 3091a20a3b0dee146acdd6b573a7a6bd
+  - enabled: 1
+    path: Assets/Scenes/DarkScene.unity
+    guid: c69651db43eb74349840d85510edfb62
   m_configObjects: {}

@@ -10,10 +10,10 @@ public class ChangeTheme : MonoBehaviour
     
     public void changeTheme(string ThemeMode)
     {
-        if (ThemeMode == DarkMode)
-            SceneManager.LoadScene(0); //load light scene
-
         if (ThemeMode == LightMode)
-            SceneManager.LoadScene(1); //load dark scene
+            SceneManager.LoadScene(1); //load light scene
+
+        if (ThemeMode == DarkMode)
+            SceneManager.LoadScene(2); //load dark scene
     }
 }
