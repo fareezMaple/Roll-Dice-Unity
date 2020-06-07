@@ -9,9 +9,9 @@ EditorBuildSettings:
     path: Assets/Scenes/ThemeLoaderScene.unity
     guid: ee96447a41aae3248a2ef8b0b3ad8d79
   - enabled: 1
-    path: Assets/Scenes/LightScene.unity
-    guid: 3091a20a3b0dee146acdd6b573a7a6bd
+    path: Assets/Scenes/Windows Scenes/LightSceneWindows.unity
+    guid: 213afa1edfa67194495193bdccfeef3c
   - enabled: 1
-    path: Assets/Scenes/DarkScene.unity
-    guid: c69651db43eb74349840d85510edfb62
+    path: Assets/Scenes/Windows Scenes/DarkSceneWindows.unity
+    guid: 57420184ed37f16418598a0c62b08394
   m_configObjects: {}
