@@ -10,13 +10,16 @@ Using random number (1-6) to generate dice.
 
 ## DEVELOPMENT STATUS
 
-**ACTIVE**, will _stop_ in the next few version
+**STIL ACTIVE**
+
+## APP UI
 
 ## FEATURE
 
 1. Single mode (use only one dice)
 2. Double mode (two dice)
 3. Turn on/off sound on click button
+4. Ease your eyes using dark mode
 
 ## EXTERNAL LINK
 
