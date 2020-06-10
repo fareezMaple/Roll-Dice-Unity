@@ -19,7 +19,7 @@ Using random number (1-6) to generate dice.
 1. Single mode (use only one dice)
 2. Double mode (two dice)
 3. Turn on/off sound on click button
-4. Ease your eyes using dark mode
+4. Ease your eyes using dark mode (coming soon)
 
 ## EXTERNAL LINK
 
