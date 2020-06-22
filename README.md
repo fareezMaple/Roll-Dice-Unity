@@ -30,3 +30,4 @@ Using random number (1-6) to generate dice.
 
 1. [Download app on Google Play store](https://play.google.com/store/apps/details?id=com.maple.DiceDadu)
 2. [App changelogs history](https://telegra.ph/Virtual-Dice-Changelogs-04-21)
+3. [Download for Windows]
